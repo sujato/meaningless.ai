@@ -7,21 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Bhante Sujato on why AI is bad and we should stop using it.">
     <title>meaningless.ai</title>
-    <link rel="stylesheet" href="style.css">
     <style>
 
       @font-face {
   font-family: 'piazzolla'; 
   src: url('fonts/Piazzolla-Regular.woff2') format('woff2'); 
   font-weight: normal;  
-  font-style: normal;  
+  font-style: normal;
+  font-display: swap;  
 }
 
       @font-face {
   font-family: 'piazzolla'; 
   src: url('fonts/Piazzolla-Bold.woff2') format('woff2'); 
   font-weight: bold;  
-  font-style: normal;  
+  font-style: normal; 
+  font-display: swap; 
 }
 
       @font-face {
@@ -29,6 +30,7 @@
   src: url('fonts/Piazzolla-Italic.woff2') format('woff2'); 
   font-weight: normal;  
   font-style: italic;  
+  font-display: swap;
 }
 
 :root
@@ -115,12 +117,22 @@ a
 
 a
 {
-        text-decoration: none;
+    text-decoration: none;
 
     text-decoration-color: var(--tertiary-text-color);
 }
 
-a:hover
+#text a {
+    text-decoration: underline;
+
+    text-decoration-style: solid;
+    text-underline-offset: 6px;
+
+    text-decoration-color: var(--tertiary-text-color);
+}
+
+a:hover,
+#text a:hover
 {
     text-decoration: underline;
 
@@ -128,6 +140,8 @@ a:hover
     text-underline-offset: 4px;
     text-decoration-color: var(--tertiary-text-color);
 }
+
+
 
 section
 {
@@ -410,7 +424,7 @@ dialog
   <figure>
     <picture>
     <source srcset="sujato-astro.avif" type="image/avif">
-    <img src='sujato-astro.jpg' alt='rough hand drawn sketch by sujato of sujato as an astronaut, described as the worst image ever drawn'>
+    <img src='sujato-astro.jpg' alt='rough hand drawn sketch by sujato of sujato as an astronaut, described as the worst image ever drawn' width='576' height='834.166'>
 </picture>
     <figcaption>sujato as astronaut landing on alien planet</figcaption>
   </figure>
@@ -514,7 +528,7 @@ and those who feel who find it. </p>
 <figure>
 <picture>
 <source srcset="annie.avif" type="image/avif">
-<img src="annie.jpg" alt='screenshot from twitter of annie altman saying, it’s so sad how humans creating new technologies are so insecure in their creations (that they’ve projected their personal insecurities onto) that they attempt to prove they’ve somehow “out created” mother nature’s creations'>
+<img src="annie.jpg" alt='screenshot from twitter of annie altman saying, it’s so sad how humans creating new technologies are so insecure in their creations (that they’ve projected their personal insecurities onto) that they attempt to prove they’ve somehow “out created” mother nature’s creations' width='576' height='206.857'>
 </picture>
 </figure>
 

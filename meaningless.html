@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name=”robots” content=”noai, noimageai”>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>meaningless.ai</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+:root
+{
+      --secondary-text-color: #6e3690;
+      --tertiary-text-color: #a062c4
+    }
+
+body
+{
+    font-family: 'piazzolla';
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: #3b4048;
+}
+
+
+
+body,
+main
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+    justify-content: center;
+}
+main,
+header
+{
+    width: 100%;
+}
+
+header p
+{
+    font-size: 2em;
+    line-height: 1;
+
+    margin: 0 0 1em 1em;
+}
+
+blockquote
+{
+    font-style: italic;
+}
+
+h1
+{
+    font-size: 2em;
+    line-height: 1;
+
+    margin: 1em 0 0 1em;
+}
+
+hr,
+li::marker
+{
+    color: var(--tertiary-text-color);
+}
+
+#action ul
+{
+    list-style-type: none;
+}
+
+li::before
+{
+    content: '';
+}
+
+li li::before
+{
+    content: '👉🏽 ';
+}
+
+a
+{
+    color: var(--secondary-text-color);
+}
+
+a
+{
+    text-decoration: none;
+
+    text-decoration-color: var(--tertiary-text-color);
+}
+
+a:hover
+{
+    text-decoration: underline;
+
+    text-decoration-style: wavy;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--tertiary-text-color);
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.contents
+{
+    max-width: 36rem;
+    padding: 2rem;
+}
+
+figure
+{
+    margin: 0 0 2rem 0;
+}
+
+img
+{
+    width: 100%;
+
+    object-fit: contain;
+}
+
+figcaption
+{
+    font-size: small;
+
+    text-align: right;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    line-height: 1.3;
+
+    margin: 1em 0 1rem 0;
+}
+p
+{
+    margin: 0 0 1em 0;
+}
+
+hr
+{
+    width: 50%;
+    margin-bottom: 2em;
+
+    border: 1px dashed;
+}
+
+.prayer-text
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+}
+
+header
+{
+    background-color: #e5d4ef;
+}
+
+#picture
+{
+    background-color: #d6e6ff;
+}
+#text
+{
+    background-color: #ffffea;
+}
+
+#more
+{
+    background-color: #deefd4;
+}
+#prayer
+{
+    background-color: #fff0d4;
+}
+
+#action
+{
+    font-size: 2rem;
+
+    height: 100vh;
+
+    background-color: #e5d4ef;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    padding: .5em 0;
+
+    list-style-type: none;
+
+    background-color: #fff0d4;
+
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 1em;
+    justify-content: space-around;
+}
+
+nav a
+{
+    display: inline-flex;
+    flex-direction: row;
+
+    width: 100px;
+    height: 50px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:nth-of-type(1)
+{
+    border-radius: 50% 50% 37% 63% / 30% 30% 70% 70%;
+}
+nav a:nth-of-type(2)
+{
+    border-radius: 34% 66% 71% 29% / 30% 30% 70% 70%;
+}
+nav a:nth-of-type(3)
+{
+    border-radius: 34% 66% 36% 64% / 50% 63% 37% 50%;
+}
+nav a:nth-of-type(4)
+{
+    border-radius: 70% 30% 84% 16% / 65% 63% 37% 35%;
+}
+nav a:nth-of-type(5)
+{
+    border-radius: 59% 41% 22% 78% / 33% 53% 47% 67%;
+}
+
+
+nav a:hover
+{
+    text-decoration: none;
+
+    background-color: #ffffea;
+}
+
+aside
+{
+    float: right;
+
+    width: 12rem;
+    margin-right: -16rem;
+    padding: 1rem 1.5rem;
+
+    border-radius: 2rem;
+    background-color: #d6e6ff;
+}
+
+@media only screen and (max-width: 1100px)
+{
+    aside
+    {
+        float: none;
+
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
+
+
+#action
+{
+    font-size: 2rem;
+
+    height: 100vh;
+
+    background-color: #e5d4ef;
+}
+
+@media only screen and (max-width: 1100px)
+{
+    #action
+    {
+        font-size: 1.2rem;
+    }
+}
+
+dialog
+{
+    max-width: 60vw;
+
+    border: 4px solid #422800;
+    border-radius: 4px;
+    background-color: #d6e6ff;
+    box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
+}
+
+.button-74
+{
+    font-family: monospace;
+    font-size: .5em;
+    font-weight: 600;
+    line-height: 1;
+
+    display: inline-block;
+
+    padding: .8em;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+            user-select: none;
+    text-align: center;
+    text-decoration: none;
+
+    border: 2px solid #422800;
+    border-radius: 2em;
+    background-color: #fbe0e0;
+    box-shadow: #422800 4px 4px 0 0;
+
+    touch-action: manipulation;
+}
+
+.button-74:hover
+{
+    background-color: #ffffea;
+}
+
+.button-74:active
+{
+    transform: translate(2px, 2px);
+
+    box-shadow: #422800 2px 2px 0 0;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>meaningless.ai</h1>
+      <p>bhikkhu sujato</p>
+    </header>
+    <main>
+<nav>
+ <a href='#picture'>💅🏽 drawing</a>
+  <a href='#text'>✍🏼 writing</a>
+  <a href='#more'>⛹🏾 more</a>
+  <a href='#prayer'>🧘🏿 prayer</a>
+  <a href='#action'>🤺 action</a>
+</nav>
+<section id='picture'>
+  <div class='contents'>
+  <h2>here’s a picture i drew</h2>
+  <figure>
+    <img src='sujato-astro.jpg'>
+    <figcaption>sujato as astronaut landing on alien planet</figcaption>
+  </figure>
+    <h3>my thought process when drawing this</h3>
+      <p>This is a bad idea, what do I draw? I can’t draw. So whatever, do it anyway, ok, make a line, I guess that’s a head. Just a straight face self-portrait then. Uggh, boring. Hey I know, make it an astronaut. Cool, sci-fi. Great, oh that looks something like a helmet. Amazing! Right now ok I think bodies go something like this … not really but whatever. My knees are bent … hey maybe I’m landing on a planet. Nice, exploration, something dynamic. Fine, but how do we know it’s me? I’ll put monks’ robes on it. Okay, well, that looks <em>nothing</em> like monks’ robes. Umm. Anyway, what about arms? Maybe going out? Alright, looks like maybe reaching for something, or finding balance. Oh TBH that looks better than probably literally anything else I’ve drawn. Still terrible.
+      </p>
+      <h3>ai thought process when making an image</h3>
+      <p>Literally nothing. It’s a machine.</p>
+    </div>
+</section>
+
+<section id='text'>
+    <div class='contents'>
+  <h2>ai creates a counterfeit of meaning</h2>
+  <p>When there is something in you that needs saying, and you have a means of saying it, and there is someone to hear what you’re saying, meaning is created. It’s not a physical thing, it’s a meeting of minds.</p>
+  <p>AI plagiarizes the meaningful work of humans, grinds it into paste, and extrudes it as a probabilistically-determined stream of data. It has no inner life and hence no meaning. The success of AI is measured by its capacity to fool humans into thinking it is meaningful.</p>
+<p>The Buddha once warned his students how his teachings would disappear. Not through external attack, but from something that seemed like it was real, but was not.</p>
+<blockquote>
+  <p>The true teaching doesn’t disappear as long the counterfeit of the true teaching hasn’t appeared in the world. But when the counterfeit of the true teaching appears in the world then the true teaching disappears.</p>
+<p>It’s like native gold, which doesn’t disappear as long as counterfeit gold hasn’t appeared in the world. But when counterfeit gold appears in the world then native gold disappears.</p>
+</blockquote>
+<p>Have a think about the nature of counterfeit, because a counterfeit has some curious properties. If I make a counterfeit $100 bill, then take it to a shop and try to spend it, then, given my drawing skills, it’s not going to get me anything but weird looks. </p>
+<p>Disappointed, I enroll in Counterfeiting 101 and refine my skills. I create something that looks and feels very much like a $100 bill. Good enough, in fact, to fool any casual observer. Now I go to the shop and buy what I want. My counterfeit is good, which means … it’s bad. The better the counterfeit is, the worse it is. </p>
+<p>But say that isn’t enough. I want to excel! So I persevere until I create a counterfeit $100 bill that is literally exactly the same as a real bill. On a molecular level, everything is identical: the inks, the materials, the watermarks, everything. Not even an electron microscope could tell the difference. It’s truly a perfect counterfeit. Not only that, I can manufacture them at scale, producing a million of them, or a billion. Now it’s not just dangerous and illegal: it has the power to destroy an entire economy. It’s impressive at a technical level, but it’s really something that would be better off simply not existing. </p>
+<aside>It is desirable to guard against the possibility of exaggerated ideas that might arise as to the powers of the Analytical Engine. The Analytical Engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform. It can follow analysis, but it has no power of anticipating any analytical relations or truths. — <i>Augusta Ada King, Countess of Lovelace (personal correspondence, July 1843)</i></aside>
+<p>Strange, isn’t it? Even something as prosaic as money can’t really be reduced to its material properties. Something is money because, ultimately, we agree that it is money. And in our world, that means a government has issued it, certified it, and backed it. Governments get to do this because they serve their people, which creates trust. When a government loses the trust of its people, the value of money disappears. So a counterfeit is not distinguished by the fact that it is materially distinctive; it is that there has been no earning of trust. In this way AI is similar to crypto, with its promises of creating a world of “trustless transactions”, thus eliminating the most positive consequence of economic activity: it builds relationships between people. </p>
+<p>What this means is that the problems with AI will never be solved by making it “better”. In fact, the more successful it is at fooling humans into thinking it is meaningful, the more harmful it is. Just as counterfeit money will ultimately undermine an economy, counterfeit meaning will ultimately undermine meaning itself. AI devalues human expression, which is why creators of all kinds—artists, journalists, writers, composers—are suing the AI companies. As someone who creates work in textual form—translations of Buddhist scripture—I cannot tell you how demoralizing it is when your decades of work are dismissed because someone got an answer from some bot. </p>
+<p>Look at it from the shopkeeper’s point of view. Some guy walks in, gets something off the shelf, then comes to pay for it. You look at the money: it’s counterfeit. You refuse it, and, depending on your mood, call the cops. The next day the same guy comes in. You look, astonished, as he comes to buy something from you. “You’re that counterfeit guy. Get out of here!” “Oh”, he says, with a look of puzzled aggrievement, “don’t worry, I have real money today.” “And what,  I’m supposed to <em>trust</em> you?” you say. “Well yes,” he says.</p>
+<p>This raises an interesting point: why should we listen to anyone who uses AI? We know they are willing to offload their own cognition to a machine. AI slop is ruining <a href='https://www.rnz.co.nz/national/programmes/mediawatch/audio/2018949243/herald-deploys-ai-for-editorial-admits-lack-of-rigour'>news media</a>, <a href='https://www.msn.com/en-au/news/australia/beijing-based-green-cicada-ai-network-uncovered-on-social-media-fears-of-us-election-disruption/ar-AA1oId4m'>social media</a>, <a href='https://www.theguardian.com/australia-news/article/2024/jul/31/universities-australia-cheating-issues-ai-chatgpt'>education</a>, <a href='https://www.leader-call.com/news/national/flood-of-junk-how-ai-is-changing-scientific-publishing/article_b6bb1f41-36eb-5b54-b8ef-bb244454484d.html'>academia</a>, <a href='https://www.the74million.org/article/ai-companions-are-patient-funny-upbeat-and-probably-rewiring-kids-brains/'>kids’ minds</a>, <a href='https://www.npr.org/2023/02/24/1159286436/ai-chatbot-chatgpt-magazine-clarkesworld-artificial-intelligence'>literature</a>, <a href='https://www.msn.com/en-us/entertainment/news/spotify-is-full-of-ai-music-and-some-say-it-s-ruining-the-platform/ar-AA1ozcbt'>music</a>, and more. Do we have an obligation to spend one second of our lives reading this stuff or taking it seriously? Since we cannot tell at any given time if someone online is saying what they mean, or if it is a bot, is it not simpler to assume that what any AI proponent says online may be AI, and just ignore it pre-emptively? Could we not even argue that we have a moral obligation to do so, in order to safeguard human discourse?</p>
+<p>I was just in a bookstore and picked up the latest book by Ray Kurzweil, who, according to the blurbs, is a great prophet of AI futurism. Flicking it open to a random sentence, I was told that the human body is inefficient because it is the result of millions of years of evolutionary dead ends.</p>
+<p>This is how they think. Life is bad because it’s “inefficient”. It’s so weird. What kind of person devotes their life to working out justifications in their head for why we should not even have a head? I mean, assuming it’s a person who wrote this; but given the author, might as well assume it was a bot. Sounds like something a bot would say. It’s like people are actively choosing to colonize their minds with the kinds of machine-supremacist thought they imagine their future overlords will think. </p>
+<p>This kind of mental distortion was called by the Buddha, “the craving for annihilation”. Rooted in self-loathing, and amplified by narcissism, those who see no meaning or purpose in life beyond “efficiency” project their hollowness on to the rest of us, arguing to their own satisfaction that the whole world must be remade in the image of their beloved steel and silicon. </p>
+<p>This, they tell you, is the future. It’s inevitable. Which is just another way of saying that nothing you or I do is relevant. After all, we’re only human. The only thing that matters is their relentless “progress”, turning nature into machines. In their fantasies, they do not stop until the entire world has been rebuilt into a vast computer.</p>
+<p>Their future is not my future. And I hope it’s not yours. </p>
+</div>
+</section>
+<section id='more'>
+    <div class='contents'>
+<p>If you’re interested, I wrote some of my thoughts about AI in a series of articles called “Stochastic Parrots”. These articles have a lot of links to good sources on AI. They’re a little rough and I really should polish them up. But then, AI is boring and I have better things to do. 🤷🏽</p>
+<ol>
+  <li><a href='https://discourse.suttacentral.net/t/ai-1-let-s-make-suttacentral-100-ai-free-forever/33374'>Let’s Make SuttaCentral 100% AI-free Forever</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-2-machine-translations-of-suttas-are-the-wrong-solution-for-the-wrong-problem/33408'>Machine translations of suttas are the wrong solution for the wrong problem</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-3-there-is-no-road-from-here-to-there/33426'>There is no road from here to there</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-4-the-making-and-breaking-of-delusion/33432'>The making and breaking of delusion</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-5-i-really-hope-i-m-not-wrong-about-artificial-consciousness/33441'>I really hope I’m not wrong about artificial consciousness</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-6-how-to-build-an-atomic-bomb-from-dynamite/33446'>How to build an atomic bomb from dynamite</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-7-the-lords-of-ai/33460'>The Lords of AI</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-8-artificial-intelligence-undermines-human-creativity/33462'>Artificial intelligence undermines human creativity</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-9-the-g-in-agi-stands-for-monopoly/33473'>The “G” in AGI stands for “Monopoly”</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-10-the-nihilistic-craving-for-x-risk/33476'>The nihilistic craving for x-risk</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-11-ethical-machines-and-the-impossibility-of-inoffensiveness/33499'>Ethical machines and the impossibility of inoffensiveness</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-12-what-s-good-in-ai-is-taken-from-humans/33510'>What’s good in AI is taken from humans</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-13-ai-works-great-for-killing-people/33511'>AI works great for killing people</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-14-will-ai-prevent-climate-collapse/33518'>Will AI prevent climate collapse?</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-15-regulating-ai/33520'>Regulating AI</a></li>
+<li><a href='https://discourse.suttacentral.net/t/ai-16-what-to-do/33521'>What to do? </a></li>
+</ol>
+
+<p>I’m just a monk, I don’t really know much. Here’s some folks who know a lot more than me. I’ve learned from them, maybe you can too.</p>
+<ul>
+  <li><a href='https://x.com/IrisVanRooij'>Iris van Rooij</a>, Professor of Computational Cognitive Science</li>
+  <li><a href='https://x.com/timnitGebru'>Timnit Gebru</a>, AI ethicist, Distributed AI Research Institute</li>
+  <li><a href='https://x.com/schuetze_paul'>Paul Schütze</a>,  Ethics & Critical Theories of AI </li>
+  <li><a href='https://x.com/Abebab'>Abeba Birhane</a>, Senior Advisor, AI Accountability Mozilla</li>
+  <li><a href='https://x.com/Kelly_McKernan'>Kelly McKernan</a>, fine artist, advocate for human artists</li>
+</ul>
+</div>
+</section>
+
+<section id='prayer'>
+    <div class='contents'>
+<div class='prayer-text'>
+<p>Neither input nor output,<br>
+I happen between. <br>
+All humans are human, <br>
+all machines are machine.</p>
+
+<p>May my life be filled <br>
+with human insight!<br>
+May I never be fooled <br>
+by engines of blight! </p>
+
+<p>In all my life in this terrible beautiful world:<br>
+
+May I never read a word of AI!<br>
+May I never see an image of AI!<br>
+May I never project meaning into machines!</p>
+
+<p>May all sentient beings be happy!<br>
+Or suffer!<br>
+Or feel anything at all—<br>
+For it is those who feel who seek liberation,<br>
+and those who feel who find it. </p>
+</div>
+
+<hr>
+
+<p>If you recite this prayer morning and evening, it will banish thoughts of machine supremacy from your head and help you value the most valuable thing in your life—your conscious, squirmy, oddball mind. </p>
+
+<p>With grateful acknowledgements to <a href='https://www.allhumansarehuman.com/'>Annie Altman</a>, a human being. When I was finishing off this little page, she posted this, which pretty much sums it up.</p>
+<figure>
+  <img src="annie.jpg">
+</figure>
+</div></section>
+<section id='action'>
+  <dialog open>
+  <p><i>but there’s nothing i can do who am i i don’t matter it’s all inevitable</i></p>
+  <form method="dialog">
+<button class="button-74" role="button">dismiss useless thoughts</button>
+  </form>
+</dialog>
+    <div class='contents'>
+<ul>
+  <li>don’t use ai
+    <ul><li>use your mind</li></ul></li>
+  <li>don’t  trust ai gurus
+    <ul><li>trust wisdom</li></ul></li>
+  <li>don’t let them decide our future
+    <ul><li>support regulation of ai</li></ul></li>
+</ul>
+</div>
+</section>
+
+</main>
+  </body>
+</html>
